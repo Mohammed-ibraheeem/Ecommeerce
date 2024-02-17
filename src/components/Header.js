@@ -32,7 +32,7 @@ function Header() {
                                 <Link className="text-white">Dev Corner</Link>
                             </h2>
                         </div>
-                        <div ClassName="col-5">
+                        <div classNamelassName="col-5">
                             <div className="input-group search">
                                 <input
                                     type="text"
@@ -107,7 +107,7 @@ function Header() {
                                             <img src={img5} alt="..." />
                                             <span className="me-3 d-inline-block"> Shop Categories </span>
                                         </button>
-                                        <ul class="dropdown-menu">
+                                        <ul className="dropdown-menu">
                                             <li><Link className="dropdown-item text-white" to=" ">Action</Link></li>
                                             <li><Link className="dropdown-item text-white" to=" ">Another action</Link></li>
                                             <li><Link className="dropdown-item text-white" to=" ">Something else here</Link></li>
@@ -117,7 +117,7 @@ function Header() {
                                 <div className="menu-links">
                                     <div className="d-flex alingn-items-center gap-15 ">
                                         <NavLink to="/">Home</NavLink>
-                                        <NavLink to="/">Our Store</NavLink>
+                                        <NavLink to="/store">Our Store</NavLink>
                                         <NavLink to="/">Blogs</NavLink>
                                         <NavLink to="/contact">Contact</NavLink>
                                     </div>

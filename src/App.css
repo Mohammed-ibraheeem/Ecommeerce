@@ -373,3 +373,40 @@ footer .input-group-text {
   color: white;
 }
 /*famous wapper  End*/
+
+/*Our Store  */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+.filter-card ul,
+.filter-card .from-check-label {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+  margin: 5px;
+}
+.filter-card .from-check-input:focus {
+  box-shadow: none;
+  /*border-color: rgb(0, 0, 0, 25);*/
+} /*
+.filter-card .from-check-input:checked {
+  background-color: var(--color-febd69);
+}*/
+.sup-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
+}
+/*Our Store  End*/
