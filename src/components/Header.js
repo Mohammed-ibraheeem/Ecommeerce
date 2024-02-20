@@ -32,7 +32,7 @@ function Header() {
                                 <Link className="text-white">Dev Corner</Link>
                             </h2>
                         </div>
-                        <div classNamelassName="col-5">
+                        <div className="col-5">
                             <div className="input-group search">
                                 <input
                                     type="text"
@@ -46,9 +46,9 @@ function Header() {
                             </div>
                         </div>
                         <div className="col-5 c1">
-                            <div className="header-upper-links d-flex align-items-center justify-content-between">
+                            <div className="header-upper-links d-flex  justify-content-between">
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/compare-product' className="d-flex align-items-center gap-10 text-white">
                                         <img src={img1} alt="compare" />
                                         <p className="mb-0">
                                             compare
@@ -58,7 +58,7 @@ function Header() {
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/wsihlist' className="d-flex align-items-center gap-10 text-white">
                                         <img src={img2} alt="whshlist" />
                                         <p className="mb-0">
                                             Favourite
@@ -68,7 +68,7 @@ function Header() {
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/login' className="d-flex align-items-center gap-10 text-white">
                                         <img src={img3} alt="user" />
                                         <p className="mb-0">
                                             Login
@@ -78,9 +78,9 @@ function Header() {
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className="d-flex align-items-center gap-10 text-white">
+                                    <Link to='/cart' className="d-flex gap-10 text-white">
                                         <img src={img4} alt="cart" />
-                                        <div className="d-flex flex-column gap-10 m-2">
+                                        <div className="d-flex flex-column mx-2">
                                             <span className="badge bg-white text-dark">0</span>
                                             <p className="mb-0 mt-2">$ 500</p>
                                         </div>
@@ -118,7 +118,7 @@ function Header() {
                                     <div className="d-flex alingn-items-center gap-15 ">
                                         <NavLink to="/">Home</NavLink>
                                         <NavLink to="/store">Our Store</NavLink>
-                                        <NavLink to="/">Blogs</NavLink>
+                                        <NavLink to="blogs">Blogs</NavLink>
                                         <NavLink to="/contact">Contact</NavLink>
                                     </div>
                                 </div>

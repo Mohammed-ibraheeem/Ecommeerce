@@ -14,7 +14,7 @@ function Footer() {
                                 <h2 className='mb-0 text-white'>Sign Up For Newsletter</h2>
                             </div>
                         </div>
-                        <div className="col-14">
+                        <div className="col-6">
                             <div className="input-group search">
                                 <input
                                     type="text"

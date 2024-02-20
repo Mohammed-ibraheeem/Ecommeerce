@@ -6,11 +6,13 @@ import img_product2 from "../images/view.svg"
 import img_product3 from "../images/add-cart.svg"
 import img_product4 from "../images/wish.svg"
 
-import { Link } from "react-router-dom";
-function ProductCard() {
+import { Link, useLocation } from "react-router-dom";
+function ProductCard(props) {
+    const { grid } = props;
+    let location = useLocation();
     return (
         <>
-            <div className="col-2">
+            <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-2"}`}>
                 <Link className="product-card position-relative">
                     <div className="wishlist-icon position-absolute">
                         <Link>
@@ -35,6 +37,12 @@ function ProductCard() {
                             fullIcon={<i className="fa fa-star"></i>}
                             activeColor="#ffd700"
                         />
+                        <p className={`description ${grid === 12 ? "d-block" : "d-none"}`} >
+                            At Vero eos et accusamus et insto odio digissimos ducimus qui
+                            blanditiis praesentim voluptaum deleniti atque corrupti quos
+                            dolores et quas ,olestias excepturi excepturi sint occaecati cupiditate non
+                            provident, similique sunt...
+                        </p>
                         <p className="price">$100.00</p>
                     </div>
                     <div className="action-bar position-absolute">
