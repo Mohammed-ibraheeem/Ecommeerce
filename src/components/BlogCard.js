@@ -13,7 +13,7 @@ function BlogCard() {
                     <p className='desc'>
                         you're Only As Your Last Collection, Which is
                         An Enormous Pressure. I Think There is Something About...</p>
-                    <Link to="/" className='button'>Read More</Link>
+                    <Link to="/blog/:id" className='button'>Read More</Link>
                 </div>
             </div>
         </>

@@ -4,11 +4,11 @@ import Meta from "../components/Meta";
 import Container from "../components/Container";
 import CustomInput from '../components/CustomInput';
 
-function Signup() {
+function Resetpassword() {
     return (
         <>
-            <Meta title={"Create Account"} />
-            <BreadCrumd title=" Create Account" />
+            <Meta title={"Reset Password"} />
+            <BreadCrumd title=" Reset Password" />
             <Container class1="login-wrapper py-5 home-wrapper-2">
                 <div className="row">
                     <div className="col-12">
@@ -16,33 +16,18 @@ function Signup() {
                             <h3 className='text-center mb-3'>Create Account</h3>
                             <form action='' className='d-flex flex-column gap-15'>
                                 <CustomInput
-                                    type="text"
-                                    name='name'
-                                    placeholder='First name'
-                                />
-                                <CustomInput
-                                    type="text"
-                                    name='name'
-                                    placeholder='Last name'
-                                />
-                                <CustomInput
-                                    type="email"
-                                    name='email'
-                                    placeholder='Email'
-                                />
-                                <CustomInput
-                                    type="tel"
-                                    name='mobile'
-                                    placeholder='Mobile Number'
-                                />
-                                <CustomInput
                                     type="password"
                                     name='password'
                                     placeholder='Password'
                                 />
+                                <CustomInput
+                                    type="password"
+                                    name='confpassword'
+                                    placeholder='confirm Password'
+                                />
                                 <div>
                                     <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
-                                        <button className='button border-0'>Create</button>
+                                        <button className='button border-0'>Ok</button>
                                     </div>
                                 </div>
                             </form>
@@ -54,4 +39,4 @@ function Signup() {
     )
 }
 
-export default Signup
+export default Resetpassword

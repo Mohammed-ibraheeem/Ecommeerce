@@ -1,13 +1,14 @@
 import BreadCrumd from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import BlogCard from "../components/BlogCard";
+import Container from "../components/Container";
 
 function Blog() {
     return (
         <>
-            <Meta title={"Blogs"} />
-            <BreadCrumd title="Blogs" />
-            <div className="blog-wrapper home-wrapper-2 py-5">
+            <Meta title={"News"} />
+            <BreadCrumd title="News" />
+            <Container class1="blog-wrapper home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-3">
@@ -43,7 +44,7 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }
