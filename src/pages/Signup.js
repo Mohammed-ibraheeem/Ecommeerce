@@ -11,12 +11,12 @@ import { registerUser } from '../features/user/UserSlice';
 const SignupSchema = yup.object({
     firstname: yup.string().required("First name is Required"),
     lastname: yup.string().required("Last name is Required"),
-    email: yup.string().required("Email should be valid"),
+    email: yup.string().required("Email should be valid").email("Email should be valid"),
     mobile: yup.string().required("Mobile No is Required "),
     password: yup.string().required("password  is Required ")
 });
 
-function Signup() { 
+function Signup() {
     const dispatch = useDispatch()
     const formik = useFormik({
         initialValues: {

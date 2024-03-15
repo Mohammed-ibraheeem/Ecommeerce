@@ -18,7 +18,7 @@ function CheckOut() {
                                 aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item">
-                                        <Link to="/cart" className='text-dark'>
+                                        <Link to="/Ecommeerce/cart" className='text-dark'>
                                             Cart
                                         </Link>
                                     </li>
@@ -111,11 +111,11 @@ function CheckOut() {
                                 </div>
                                 <div className="w-100">
                                     <div className="d-flex justify-content-between align-items-center">
-                                        <Link to="/cart" className='text-dark'>
+                                        <Link to="/Ecommeerce/cart" className='text-dark'>
                                             <IoArrowBack className='gap-15 fs-5 m-2' />
                                             Return to Cart
                                         </Link>
-                                        <Link to="/store" className='button'>
+                                        <Link to="/Ecommeerce/store" className='button'>
                                             Continue to Shopping
                                         </Link>
                                     </div>

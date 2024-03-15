@@ -48,7 +48,7 @@ function SingleBlog() {
                                     </p>
                                     <p className='date'>11 JUNE, 2022 &nbsp; Mohamed</p>
                                     <div className='d-flex social-media mb-3'>
-                                        <Link to='/blogs' className='d-flex align-items-center gap-10'>
+                                        <Link to='/Ecommeerce/blogs' className='d-flex align-items-center gap-10'>
                                             <HiOutlineArrowNarrowLeft className='fs-4' />
                                             Back To blog
                                         </Link>

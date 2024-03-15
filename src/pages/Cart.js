@@ -59,13 +59,13 @@ function Cart() {
                     </div>
                     <div className="col-12 py-2 mt-4">
                         <div className='d-flex justify-content-between align-items-baseline'>
-                            <Link to="/store" className='button'>
+                            <Link to="/Ecommeerce/store" className='button'>
                                 Continue To Shopinng
                             </Link>
                             <div className='d-flex flex-column align-items-end '>
                                 <h4>SubTotal: $ 1000</h4>
                                 <p>Texes and shopping calclated at cheackout</p>
-                                <Link to="/checkout" className='button' >
+                                <Link to="/Ecommeerce/checkout" className='button' >
                                     Checkout
                                 </Link>
                             </div>

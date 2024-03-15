@@ -7,13 +7,23 @@ import image_drid1 from "../images/gr.svg"
 import image_drid2 from "../images/gr2.svg"
 import image_drid3 from "../images/gr3.svg"
 import image_drid4 from "../images/gr4.svg"
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import ProductCard from "../components/ProdectCard";
 import Color from "../components/Color";
 import Container from "../components/Container";
+import { getAllProducts } from "../features/products/ProductSlice";
 
 function OurStore() {
     const [grid, setGrid] = useState(4);
+    const productState = useSelector((state) => state.product.product);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        getproducts();
+    });
+    const getproducts = () => {
+        dispatch(getAllProducts());
+    }
     //alert(grid);
     return (
         <>
@@ -266,12 +276,12 @@ function OurStore() {
                         </div>
                         <div className="product-list pb-5">
                             <div className="d-flex gap-10 flex-wrap">
-                                <ProductCard grid={grid} />
-                                <ProductCard grid={grid} />
-                                <ProductCard grid={grid} />
-                                <ProductCard grid={grid} />
-                                <ProductCard grid={grid} />
-                                <ProductCard grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
+                                <ProductCard data={productState} grid={grid} />
                             </div>
                         </div>
                     </div>
